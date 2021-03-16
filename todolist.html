@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html>
-	<style>
-		flex-container {
-  		   display: flex;
-  		   background-color: DodgerBlue;
-			 flex-direction: row;		   
+<style>
+	flex-container {
+		display: flex;
+		background-color: DodgerBlue;
+		flex-direction: row;
+		height: 200px;
+		justify-content: center;
+		color: red;
 
-		}
-	</style>
+	}
+</style>
 
 <head>
 </head>
 
 <body>
 	<div class="flex-container" id="todo">
-		<h1>To Do List:<h1>
-				<input id="todoInput">
-				<button type="button" onclick="todoList()">Add Item</button>
+		<div>
+			<h1>To Do List:<h1>
+					<input id="todoInput">
+					<button type="button" onclick="todoList()">Add Item</button>
 		</div>
-	<ul id="todoList"></ul>
+		<ul id="todoList"></ul>
+	</div>
 </body>
 <script src="todolist.js"></script>
 

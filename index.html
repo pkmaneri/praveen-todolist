@@ -3,11 +3,30 @@
 
 <head>
 	<style>
+		
 		.flex-container {
 			display: flex;
 			background-color: DodgerBlue;
 			flex-wrap: column- wrap;
 
+
+		}
+
+		.flex-item-left {
+			flex: 50%;
+		}
+
+		.flex-item-right {
+			flex: 50%;
+		}
+
+		/* Responsive layout - makes a one column layout instead of a two-column layout */
+		@media (max-width: 800px) {
+
+			.flex-item-right,
+			.flex-item-left {
+				flex: 100%;
+			}
 		}
 
 		.flex-container>div {
@@ -35,3 +54,4 @@
 </body>
 
 </html>
+ <!-- // node Json123.js -->
