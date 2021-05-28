@@ -7,7 +7,7 @@
 
 // Input ---------------
 // obj.promotion.productsAmended
- let obj={
+let obj = {
   "promotion": {
     "countryCode": "GB",
     "promotionId": "trn:tesco:promotion:uuid:f7e367d6-9914-4880-80c1-b6b55c1d1ef2",
@@ -381,29 +381,49 @@
   "fundingsAmended": null
 }
 
- const a = obj.productsAmended.filter((ele)=>{
-   // check console.log-data type kya hai.
-   //apporach -data type -array---map or filter
-    // console.log(ele.fieldsUpdated)
-    // field fieldsUpdated-array of object- condition statement 
-     let rpmStatusArr=ele.fieldsUpdated.filter((e)=>{
-      return e.fieldName ==="rpmStatus"
-    })
-    // array length -one, rpmStatusobj-
+//  const a = obj.productsAmended.filter((ele)=>{
+//    // check console.log-data type kya hai.
+//    //apporach -data type -array---map or filter
+//     // console.log(ele.fieldsUpdated)
+//     // field fieldsUpdated-array of object- condition statement 
+//      let rpmStatusArr=ele.fieldsUpdated.filter((e)=>{
+//       return e.fieldName ==="rpmStatus"
+//     })
+//     // array length -one, rpmStatusobj-
 
-    let rpmStatusObj = rpmStatusArr[0];
-    let fieldValue= rpmStatusObj.fieldValue;
-// condition  rpmStatus = "Delete Requested"
-    return fieldValue !== "Delete Requested"
- })
- // data type array 
- .map((ele)=>{
-  //  console.log([ele])
-   return ele.productZoneUuid
+//     let rpmStatusObj = rpmStatusArr[0];
+//     let fieldValue= rpmStatusObj.fieldValue;
+// // condition  rpmStatus = "Delete Requested"
+//     return fieldValue !== "Delete Requested"
+//  })
+//  // data type array 
+//  .map((ele)=>{
+//   //  console.log([ele])
+//    return ele.productZoneUuid
+// })
+// console.log(a)
+
+const b = obj.productsAmended.filter((ele) => {
+  //  console.log(ele)
+
+  let rpmStatusArr = ele.fieldsUpdated.filter((data) => {
+    // console.log(data)
+    return data.fieldName === "rpmStatus"
+    //  console.log(data.fieldName)
+  })
+  // console.log(rpmStatusArr[0]) 
+  let rpmStatusObj = rpmStatusArr[0];
+  let fieldValue = rpmStatusObj.fieldValue;
+  // console.log(fieldValue)
+
+  return fieldValue ==="Delete Requested"
+
 })
-console.log(a)
+  .map((ele) => {
+     return ele.productZoneUuid
+
+  })
+  console.log(b)
 
 
-	
-	
-	
+

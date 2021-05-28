@@ -1,4 +1,4 @@
-let data=[
+let data1=[
   {
     "subject": "react",
     "topics": [
@@ -79,6 +79,11 @@ let data=[
     "topics": []
   }
 ];
+data.map((ele)=>{
+   return ele
+})
+
+
 console.log(data);
 
  modifiedData=data.map((list)=>{
@@ -96,3 +101,4 @@ console.log(data);
 
 })
 console.log (JSON.stringify(modifiedData))
+ 

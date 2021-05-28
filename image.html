@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgba(red, green, blue, alpha);
+        }
+
+        h1 {
+            font-size: 2.1rem;
+            line-height: 1.4;
+            letter-spacing: 0.5rem;
+            text-align: center;
+            color:blue;
+            margin-top: 50px;
+        }
+
+        .maindiv{
+            width: 70%;
+            height: 400px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url("file:///home/pravven-dev/Downloads/pexels-fauxels-3184460.jpg");
+            background-size: 100% 100%;
+            box-shadow: 2px 2px 10px 5px white;
+            animation: slider 15s infinite linear ;
+        }
+
+        @keyframes slider{
+            0%{
+                background-image: url("file:///home/pravven-dev/Downloads/pexels-fauxels-3184460.jpg");
+
+            }
+
+            35%{
+                background-image: url("file:///home/pravven-dev/Downloads/pexels-josh-sorenson-1714208.jpg");
+            }
+
+            75%{
+                background-image: url("file:///home/pravven-dev/Downloads/pexels-vitaly-vlasov-1342460.jpg");
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>SLIDER ANIMATIONS</h1>
+    <div class="maindiv">
+
+    </div>
+</body>
+
+</html>

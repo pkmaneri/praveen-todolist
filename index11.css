@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+
+
+
+/*.headerStyle {
+			 	
+border: 1px solid black;
+margin: 20px;
+padding: 20px;
+font-size: 18px;
+}
+*/
+
+.headerStyle {			 	
+border: 1px solid black;
+margin: 20px;
+padding: 30px;
+font-size: 18px;
+font-weight: 400;
+font-size: 1rem;
+ text-align: left;
+ line-height: 1.5;
+ color: blue;
+
+}
